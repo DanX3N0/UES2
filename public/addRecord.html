@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD RECORD</title>
+</head>
+<body>
+
+    <nav>
+        <ul style="list-style: none">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="listRecords.html">Listar registros</a></li>
+            <li><a href="listRecordsById.html">Listar registros por ID</a></li>
+            <li><a href="addRecord.html">Agregar registro</a></li>
+        </ul>    
+    </nav>
+
+    <h1>Lista de productos</h1>
+    <ul id="item-list"></ul>
+
+    <h1>Insertar Registro</h1>
+    <form action="/records" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required>
+        <button type="submit">Agregar nuevo registro</button>
+    </form>
+    
+    <script src="requestRecords.js"></script>
+
+    </body>
+</html>
